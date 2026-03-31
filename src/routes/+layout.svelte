@@ -9,7 +9,7 @@
 
 <svelte:head>
 	<link rel="icon" href={favicon} />
-	<title>QR Marathon</title>
+	<title>QR Marathon | Neon Marathon-Inspired QR Code Generator</title>
 
 	<meta
 		name="description"
@@ -18,7 +18,7 @@
 
 	<meta property="og:type" content="website" />
 	<meta property="og:url" content="{PUBLIC_SITE_URL}/" />
-	<meta property="og:title" content="QR Marathon" />
+	<meta property="og:title" content="QR Marathon | Neon Marathon-Inspired QR Code Generator" />
 	<meta
 		property="og:description"
 		content="A QR code generator themed around the Marathon game. Create customizable QR codes with faction logos and neon colors, inspired by the game's aesthetic."
@@ -29,7 +29,7 @@
 
 	<meta property="twitter:card" content="summary_large_image" />
 	<meta property="twitter:url" content="{PUBLIC_SITE_URL}/" />
-	<meta property="twitter:title" content="QR Marathon" />
+	<meta property="twitter:title" content="QR Marathon | Neon Marathon-Inspired QR Code Generator" />
 	<meta
 		property="twitter:description"
 		content="A QR code generator themed around the Marathon game. Create customizable QR codes with faction logos and neon colors, inspired by the game's aesthetic."
