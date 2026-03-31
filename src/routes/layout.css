@@ -1,0 +1,6 @@
+@import 'tailwindcss';
+
+@theme {
+	--color-lime: #c0fe04;
+	--font-mono: 'Martian Mono Variable', monospace;
+}
