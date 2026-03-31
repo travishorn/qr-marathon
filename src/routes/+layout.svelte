@@ -9,7 +9,7 @@
 
 <svelte:head>
 	<link rel="icon" href={favicon} />
-	<title>QR Marathon | Neon Marathon-Inspired QR Code Generator</title>
+	<title>QR Marathon | Marathon-Inspired QR Code Generator</title>
 
 	<meta
 		name="description"
