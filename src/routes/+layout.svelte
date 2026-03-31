@@ -38,7 +38,16 @@
 </svelte:head>
 
 <div class="min-h-screen bg-black font-mono font-extralight text-white">
-	<div class="container mx-auto px-4 py-16">
-		{@render children()}
+	<div class="container mx-auto flex min-h-screen flex-col px-4 py-16">
+		<div class="flex-1">
+			{@render children()}
+		</div>
+
+		<footer class="mt-12 border-t border-lime/40 pt-4 text-center text-xs text-white/70">
+			<p>
+				QR Marathon is an independent fan-made project and is not associated with, endorsed by, or
+				sponsored by Bungie Inc.
+			</p>
+		</footer>
 	</div>
 </div>
