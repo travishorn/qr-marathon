@@ -23,6 +23,7 @@ jobs:
       - name: build
         env:
           BASE_PATH: '/${{ github.event.repository.name }}'
+          PUBLIC_ORIGIN: 'https://${{ github.repository_owner }}.github.io'
         run: |
           npm run build
 
