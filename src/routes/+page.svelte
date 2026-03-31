@@ -1,20 +1,21 @@
 <script>
+	import { base } from '$app/paths';
 	import { qrCode } from '$lib/actions/qr-code.js';
 	import InputGroup from '$lib/components/InputGroup.svelte';
 	import Button from '$lib/components/Button.svelte';
 
 	const factions = [
-		{ name: 'Arachne', image: '/arachne.svg', color: '#E30B0C' },
-		{ name: 'CyberAcme', image: '/cyberacme.svg', color: '#01D737' },
-		{ name: 'Marathon', image: '/marathon.svg', color: '#C0FE04' },
-		{ name: 'MIDA', image: '/mida.svg', color: '#BF72E4' },
-		{ name: 'NuCaloric', image: '/nucaloric.svg', color: '#FE125D' },
-		{ name: 'Sekiguchi', image: '/sekiguchi.svg', color: '#CFB72F' },
-		{ name: 'Traxus', image: '/traxus.svg', color: '#FF7300' }
+		{ name: 'Arachne', image: `${base}/arachne.svg`, color: '#E30B0C' },
+		{ name: 'CyberAcme', image: `${base}/cyberacme.svg`, color: '#01D737' },
+		{ name: 'Marathon', image: `${base}/marathon.svg`, color: '#C0FE04' },
+		{ name: 'MIDA', image: `${base}/mida.svg`, color: '#BF72E4' },
+		{ name: 'NuCaloric', image: `${base}/nucaloric.svg`, color: '#FE125D' },
+		{ name: 'Sekiguchi', image: `${base}/sekiguchi.svg`, color: '#CFB72F' },
+		{ name: 'Traxus', image: `${base}/traxus.svg`, color: '#FF7300' }
 	];
 
 	let data = $state('https://marathonthegame.com');
-	let image = $state('/marathon.svg');
+	let image = $state(`${base}/marathon.svg`);
 	let dotsColor = $state('#C0FE04');
 	let dotsType = $state('square');
 	let backgroundColor = $state('transparent');
