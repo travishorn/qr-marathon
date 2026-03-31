@@ -127,7 +127,7 @@
 	.select-input {
 		-webkit-appearance: none;
 		appearance: none;
-		background-image: url('/chevron-down.svg');
+		background-image: url('../assets/chevron-down.svg');
 		background-repeat: no-repeat;
 		background-position: right 0.9rem center;
 		background-size: 28px 28px;
