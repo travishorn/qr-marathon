@@ -25,7 +25,7 @@
 	/>
 	<meta property="og:image" content="{PUBLIC_SITE_URL}/og-image.png" />
 
-	<meta name="theme-color" content="#C2FE0C" />
+	<meta name="theme-color" content="#c0fe04" />
 
 	<meta property="twitter:card" content="summary_large_image" />
 	<meta property="twitter:url" content="{PUBLIC_SITE_URL}/" />

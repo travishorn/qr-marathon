@@ -61,7 +61,7 @@
 		<select
 			{id}
 			bind:value={selectedImageValue}
-			class="select-input border border-white p-4 pr-12 text-lg font-normal outline-none focus:border-lime focus:ring-2 focus:ring-lime"
+			class="select-input border border-white bg-black p-4 pr-12 text-lg font-normal text-white transition-colors duration-150 outline-none focus:border-lime focus:ring-2 focus:ring-lime"
 		>
 			<option value="">NONE</option>
 			{#each images as img (img.image)}
@@ -74,14 +74,14 @@
 				type="url"
 				{placeholder}
 				bind:value={customUrl}
-				class="border border-white p-4 text-lg font-normal"
+				class="border border-white bg-black p-4 text-lg font-normal text-white transition-colors duration-150 outline-none placeholder:text-white/40 focus:border-lime focus:ring-2 focus:ring-lime"
 			/>
 		{/if}
 	{:else if type === 'select'}
 		<select
 			{id}
 			bind:value
-			class="select-input border border-white p-4 pr-12 text-lg font-normal outline-none focus:border-lime focus:ring-2 focus:ring-lime"
+			class="select-input border border-white bg-black p-4 pr-12 text-lg font-normal text-white transition-colors duration-150 outline-none focus:border-lime focus:ring-2 focus:ring-lime"
 		>
 			{#each options as opt (opt)}
 				<option value={opt}>{opt.toUpperCase()}</option>
@@ -97,7 +97,7 @@
 				value = e.currentTarget.value;
 				lastHexColor = e.currentTarget.value;
 			}}
-			class="h-14 w-full cursor-pointer border border-white p-1 outline-none focus:border-lime focus:ring-2 focus:ring-lime disabled:cursor-not-allowed disabled:opacity-30"
+			class="h-14 w-full cursor-pointer border border-white p-1 transition-colors duration-150 outline-none focus:border-lime focus:ring-2 focus:ring-lime disabled:cursor-not-allowed disabled:opacity-30"
 		/>
 		<label class="flex cursor-pointer items-center gap-2 text-sm uppercase" for="{id}-transparent">
 			<input
@@ -105,6 +105,7 @@
 				type="checkbox"
 				checked={isTransparent}
 				onchange={toggleTransparent}
+				class="accent-lime"
 			/>
 			Transparent
 		</label>
@@ -117,7 +118,7 @@
 			{min}
 			{max}
 			{step}
-			class="border border-white p-4 text-lg font-normal outline-none focus:border-lime focus:ring-2 focus:ring-lime"
+			class="border border-white bg-black p-4 text-lg font-normal text-white transition-colors duration-150 outline-none placeholder:text-white/40 focus:border-lime focus:ring-2 focus:ring-lime"
 			class:number-input={type === 'number'}
 		/>
 	{/if}

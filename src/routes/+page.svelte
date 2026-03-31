@@ -98,6 +98,11 @@
 	class="mx-auto grid max-w-6xl gap-8 px-4 py-6 md:grid-cols-[minmax(0,1fr)_auto] md:items-start"
 >
 	<div class="order-2 flex min-w-0 flex-col gap-6 md:order-1">
+		<header class="mb-2">
+			<h1 class="text-2xl tracking-wide text-lime uppercase">QR Marathon</h1>
+			<p class="mt-1 text-sm text-white/50">Neon Marathon-inspired QR code generator</p>
+		</header>
+
 		<InputGroup
 			id="data"
 			label="Data"
@@ -183,7 +188,12 @@
 	</div>
 
 	<div class="order-1 md:sticky md:top-6 md:order-2 md:self-start">
-		<div class="flex justify-center" use:qrCode={qrOptions}></div>
+		<div
+			class="flex min-h-[300px] min-w-[300px] items-center justify-center"
+			use:qrCode={qrOptions}
+			role="img"
+			aria-label="QR code preview"
+		></div>
 		<div class="mt-4 flex justify-center">
 			<Button onclick={() => qrInstance?.download({ name: 'qr-code', extension: 'png' })}>
 				Download
