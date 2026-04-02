@@ -1,6 +1,7 @@
 <script>
 	import '@fontsource-variable/martian-mono/wght.css';
 	import './layout.css';
+	import background from '$lib/assets/background.svg';
 	import favicon from '$lib/assets/favicon.svg';
 	import { PUBLIC_SITE_URL } from '$env/static/public';
 
@@ -37,7 +38,10 @@
 	<meta property="twitter:image" content="{PUBLIC_SITE_URL}/og-image.png" />
 </svelte:head>
 
-<div class="min-h-screen bg-black font-mono font-extralight text-white">
+<div
+	class="min-h-screen bg-black font-mono font-extralight text-white"
+	style={`background-image: url("${background}");`}
+>
 	<div class="container mx-auto flex min-h-screen flex-col px-4 py-16">
 		<div class="flex-1">
 			{@render children()}
